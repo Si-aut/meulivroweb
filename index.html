@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Silvia Lopes - No Princípio</title>
+  <script src="https://cdn.tailwindcss.com "></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+
+  <!-- Header -->
+  <header class="text-center py-12 bg-gradient-to-b from-blue-900 to-black">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Silvia Lopes</h1>
+    <p class="text-xl md:text-2xl text-yellow-400">Autora de "No Princípio"</p>
+    <p class="mt-2 text-sm text-gray-400">Uma jornada pelas origens do mundo</p>
+  </header>
+
+  <!-- Frase do Dia -->
+  <section class="max-w-3xl mx-auto p-6 mt-8 text-center">
+    <blockquote id="daily-quote" class="text-xl md:text-2xl italic text-gray-300">
+      “Tudo começou no princípio...”
+    </blockquote>
+    <p class="text-right mt-4 text-gray-400">— No Princípio</p>
+  </section>
+
+  <!-- Botões Principais -->
+  <section class="flex flex-col md:flex-row justify-center gap-6 items-center mt-12 px-6">
+    <a href="https://1drv.ms/b/c/3be51aec9fb1c5a5/EZkXATMg0mNHi5ioUFamS4kB5UVpk9mEMUxGjFgDPvecqQ?e=iHDFV5" target="_blank" rel="noopener noreferrer" class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-4 rounded shadow-lg transition duration-300 text-center">
+      📥 Baixar Capítulo Grátis
+    </a>
+    <a href=" https://go.hotmart.com/B100778258P " target="_blank" rel="noopener noreferrer" class="bg-blue-700 hover:bg-blue-800 font-semibold px-8 py-4 rounded shadow-lg transition duration-300 text-center">
+      📘 Comprar o Livro
+    </a>
+  </section>
+
+  <!-- Sobre o Livro -->
+  <section class="max-w-3xl mx-auto p-6 mt-16">
+    <h2 class="text-2xl font-bold mb-4 border-b border-gray-700 pb-2">Sobre o Livro</h2>
+    <p class="text-gray-300 leading-relaxed">
+      <strong>"No Princípio"</strong> é uma jornada fascinante pelas origens do universo, da vida e da consciência.
+      A obra investiga desde as teorias científicas modernas até os mitos antigos do Egito, Grécia, Mesopotâmia e Américas,
+      passando por visões do Hinduísmo, Budismo, Cristianismo e Judaísmo, explorando também a física quântica,
+      profecias, intuição e espiritualidade.
+    </p>
+    <p class="text-gray-400 mt-4 italic">Disponível na Hotmart</p>
+  </section>
+
+  <!-- Carrossel de Imagens Temáticas -->
+  <section class="carousel max-w-4xl mx-auto overflow-hidden mt-8">
+    <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+      <img src="https://picsum.photos/id/1015/800/400 " alt="Cosmos" class="w-full h-64 md:h-96 object-cover">
+      <img src="https://picsum.photos/id/1016/800/400 " alt="Mitos Antigos" class="w-full h-64 md:h-96 object-cover">
+      <img src="https://picsum.photos/id/1018/800/400 " alt="Ciência Quântica" class="w-full h-64 md:h-96 object-cover">
+    </div>
+  </section>
+
+  <!-- Formulário de Captura de E-mails -->
+  <section class="max-w-2xl mx-auto p-6 mt-12 bg-gray-800 rounded-lg shadow-md">
+    <h2 class="text-xl font-bold mb-4">Receba frases diárias e novidades do livro</h2>
+    <p class="text-gray-400 mb-4">Informe seu nome e e-mail abaixo:</p>
+    <form action="#" method="post" class="space-y-4">
+      <input type="text" name="NAME" placeholder="Seu nome" required class="w-full p-3 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none">
+      <input type="email" name="EMAIL" placeholder="Seu e-mail" required class="w-full p-3 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none">
+      <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 rounded transition">
+        Receber Capítulo Grátis
+      </button>
+    </form>
+  </section>
+
+  <!-- Redes Sociais -->
+  <section class="max-w-3xl mx-auto p-6 mt-12 text-center">
+    <h2 class="text-2xl font-bold mb-4 border-b border-gray-700 pb-2">Redes Sociais</h2>
+    <div class="flex justify-center space-x-6 mt-4">
+      <a href="https://instagram.com/SilviaLopesAutora " target="_blank" class="hover:text-yellow-400 transition">📸 Instagram</a>
+      <a href="https://tiktok.com/ @SilviaLopesAutora" target="_blank" class="hover:text-yellow-400 transition">🎥 TikTok</a>
+      <a href="https://youtube.com/ @SilviaLopesAutora" target="_blank" class="hover:text-yellow-400 transition">📺 YouTube</a>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="mt-16 py-6 text-center text-gray-500 text-sm border-t border-gray-800">
+    © {{new Date().getFullYear()}} Silvia Lopes. Todos os direitos reservados.
+  </footer>
+
+  <!-- Script para frase do dia e carrossel -->
+  <script>
+    const quotes = [
+      "Tudo começou no princípio. E no fim, talvez, estejamos novamente diante do início.",
+      "O universo não tem começo nem fim — apenas ciclos infinitos de criação e renascimento.",
+      "A ciência e a espiritualidade nos mostram diferentes faces da mesma verdade.",
+      "A consciência é o véu entre o visível e o invisível.",
+      "Cada mito é um espelho das perguntas mais profundas do ser humano."
+    ];
+
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById("daily-quote").textContent = `"${randomQuote}"`;
+
+    // Carrossel automático
+    let carousel = document.getElementById("carousel");
+    let current = 0;
+
+    setInterval(() => {
+      current -= 800; // Move para a próxima imagem
+      if (current < -1600) current = 0;
+      carousel.style.transform = `translateX(${current}px)`;
+    }, 5000);
+  </script>
+
+</body>
+</html>
